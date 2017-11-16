@@ -22,61 +22,49 @@ $featured = $gallery ? array_shift( $gallery ) : false;
             </div>
 
             <div class="hb-room-info">
-                <h4 class="hb-room-name">
+                <h3 class="hb-room-name">
                     <a href="<?php echo get_the_permalink( $room->ID ) ?>">
-						<?php echo esc_html( $room->name ); ?><?php $room->hb_room_type ? printf( ' (%s)', $room->hb_room_type ) : ''; ?> · <?php $room->capacity_title ? printf( ' %s', $room->capacity_title ) : ''; ?>
+						<?php echo esc_html( $room->name ); ?> <span class="thim-color" style = "display: block; font-size:80%;"> <?php $room->capacity_title ? printf( ' %s', $room->capacity_title ) : ''; ?></span>
                     </a>
-                </h4>
-            
+
+                </h3>
                 
+
+
+
                 <ul class="hb-room-meta">
-                    
-                     <li class="hb_search_capacity">
-                        <label><?php _e( 'Room Type:', 'sailing' ); ?></label>
-                        <div class=""><?php $room->capacity_title ? printf( ' %s', $room->capacity_title ) : ''; ?></div>
-                    </li>
-                    
+<h5>Capacity</h5>
                     <li class="hb_search_capacity">
-                        <label><?php _e( 'Max. Capacity:', 'sailing' ); ?></label>
-                        <div class=""><?php echo esc_html( $room->capacity ); ?></div>
+
+                        <label>Max. Adults</label>
+                        <div class=""><span class="thim-color"><?php echo esc_html( $room->capacity ); ?></span></div>
                     </li>
                     <li class="hb_search_max_child">
-                        <label><?php _e( 'Max. Children:', 'sailing' ); ?></label>
-                        <div><?php echo esc_html( $room->max_child ); ?></div>
+                       <label>Optional Children:</label>
+                        <div class=""><span class="thim-color"><?php echo esc_html( $room->max_child ); ?></span></div>
                     </li>
-                     <li class="hb_search_quantity">
-                        <label><?php _e( 'Rooms: ', 'sailing' ); ?></label>
-                        <div>
-							<?php
-							hb_dropdown_numbers(
-								array(
-									'name'             => 'hb-num-of-rooms',
-									'min'              => 1,
-									'show_option_none' => __( 'Select', 'sailing' ),
-									'max'              => $room->post->available_rooms,
-									'class'            => 'number_room_select'
-								)
-							);
-							?>
-                        </div>
-                    </li>
-                    
+
                     <li class="hb_search_price">
-                        <label><strong><?php _e( 'Total:', 'sailing' ); ?></strong></label>
-                        <span class="hb_search_item_price"><?php echo hb_format_price( $room->amount_singular ); ?></span>
-                        <div class="hb_view_price">
-                            <a href="" class="hb-view-booking-room-details"><?php _e( '(View breakdown)', 'sailing' ); ?></a>
-							<?php hb_get_template( 'search/booking-room-details.php', array( 'room' => $room ) ); ?>
-                        </div>
-                    </li>
-                    
-                    <li class="hb_search_add_to_cart">
-                        <button class="hb_add_to_cart" sonclick="location.href = '<?php echo hb_get_cart_url() ?>';"><?php _e( 'Book this room', 'sailing' ) ?> </button>
+
+                        <h6>From <span class="hb_search_item_price"><?php echo hb_format_price( $room->amount_singular ); ?></span></h6>
+<a href="" class="hb-view-booking-room-details">Price for one person per night.</a>
+                        <?php hb_get_template( 'search/booking-room-details.php', array( 'room' => $room ) ); ?>
+
                     </li>
                     
 
+                    
+                    <li class="hb_search_add_to_cart">
+                      <a class="learn-more" href="<?php echo get_the_permalink( $room->ID ) ?>">View this Room</a>
+
+                                                <button class="hb_add_to_cart" sonclick="location.href = '<?php echo hb_get_cart_url() ?>';"><?php _e( 'Book now', 'sailing' ) ?> </button>
+
+
+                    <li>
+
+
                 </ul>
-                
+
                 <ul></ul>
             </div>
         </div>
