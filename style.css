@@ -1,0 +1,121 @@
+/*
+ Theme Name:   Sailing Child - Viva Merida
+ Theme URI:    http://sailing.thimpress.com/
+ Description:  Sailing Child Theme - Viva Merida Edition
+ Author:       ThimPress (Modified by Alex Rds)
+ Author URI:   http://thimpress.com
+ Template:     sailing
+ Version:      1.0.0
+ Text Domain:  sailing-child
+*/
+
+.home .thim-search-room.thim-search-no-padding form {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.home .home-offer .home-offer-no-padding {
+    width: 100%;
+}
+.navbar-nav {
+    text-transform: capitalize;
+    font-family: Montserrat;
+}
+.main-bottom .container {
+    width: 100%;
+}
+
+.thim-select-language .language ul li a {
+    text-align: left;
+}
+
+/* MOBILE LOGO */
+.site-header.header_v2 .width-logo>a.mobile-logo{width: 100%;} .site-header.header_v2 .inner-header-top .sm-logo .mobile-logo img{width:135px;}
+
+
+/* OFFER CIRCLE */
+
+.sale-off {
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 55px 0;
+    position: relative;
+    vertical-align: middle;
+}
+.sale-off.banner-round {
+    background: rgba(255, 255, 255, .9);
+    height: 290px;
+    border-radius: 50%;
+    padding: 50px 0
+}
+.sale-off p {
+    margin: 0;
+    color: #2a2a2a
+}
+.sale-off p.title {
+    font-family: Montserrat;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.sale-off p.heading {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.sale-off p.off {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 15px;
+    margin: 3px 0 26px
+}
+
+.sale-off p.learn-more a {
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    margin: auto;
+    line-height: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 120px;
+    margin: 0 auto
+}
+
+
+/*BOOK SINGLE ROOM*/
+
+body .hb_button#hb_room_load_booking_form {
+    float: right;
+    margin-right: auto;
+}
+
+
+
+/*SINGLE ROOM*/
+
+.hb_single_room .thim-single-room-content {
+    padding-right: 60px;
+    text-align: justify;
+}
+.hb_single_room .thim-list-in-room2 {
+    background: #ffffff;
+    padding: 15px 25px 25px
+}
+.hb_single_room .thim-list-in-room2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hb_single_room .thim-list-in-room2 ul li {
+    line-height: 30px
+}
+.hb_single_room .thim-list-in-room2 ul li i {
+    padding-right: 20px
+}
+
