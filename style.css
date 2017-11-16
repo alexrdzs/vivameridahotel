@@ -119,3 +119,14 @@ body .hb_button#hb_room_load_booking_form {
     padding-right: 20px
 }
 
+/* BUTTON STYLE */
+.hb-room-content .search-room-button  a {
+        font-weight: 600;
+        color: @white;
+        display: block;
+        margin: auto;
+        line-height: 40px;
+        .rounded(3px);
+        max-width: 140px;
+        margin: 0 auto;
+      }
