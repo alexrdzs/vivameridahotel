@@ -33,7 +33,7 @@ $featured = $gallery ? array_shift( $gallery ) : false;
 
 
                 <ul class="hb-room-meta">
-<h5>Capacity</h5>
+
                     <li class="hb_search_capacity">
 
                         <label>Max. Adults</label>
