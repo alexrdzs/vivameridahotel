@@ -55,9 +55,11 @@ $featured = $gallery ? array_shift( $gallery ) : false;
 
                     
                     <li>
-                      <a class="hb_button" href="<?php echo get_the_permalink( $room->ID ) ?>"><span style="color:white;"></span>View this Room</a>
+                      <a class="hb_button" href="<?php echo get_the_permalink( $room->ID ) ?>"><span style="color:#ffffff; font-weight:600;" title="Click to view more details.">View this Room</span> </a>
 
-                        <a class="hb_button" href="http://www.booking.com/Share-KBkgEn" target="_blank"> Book Now</a>
+                        <a class="hb_button" href="http://www.booking.com/Share-KBkgEn#availability_target" target="_blank" title="This will redirect you to our booking site."><span style="color:#ffffff; ">Book Now</span> </a>
+                        
+                    </li>
 
 <!--                                                <button class="hb_add_to_cart" sonclick="location.href = '<?php echo hb_get_cart_url() ?>';"><?php _e( 'Book now', 'sailing' ) ?> </button>-->
 

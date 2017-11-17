@@ -23,15 +23,17 @@
 .main-bottom .container {
     width: 100%;
 }
-
 .thim-select-language .language ul li a {
     text-align: left;
 }
-
 /* MOBILE LOGO */
-.site-header.header_v2 .width-logo>a.mobile-logo{width: 100%;} .site-header.header_v2 .inner-header-top .sm-logo .mobile-logo img{width:135px;}
 
-
+.site-header.header_v2 .width-logo>a.mobile-logo {
+    width: 100%;
+}
+.site-header.header_v2 .inner-header-top .sm-logo .mobile-logo img {
+    width: 135px;
+}
 /* OFFER CIRCLE */
 
 .sale-off {
@@ -57,7 +59,6 @@
     font-size: 18px;
     text-transform: uppercase;
 }
-
 .sale-off p.heading {
     font-family: Montserrat;
     font-size: 40px;
@@ -65,7 +66,6 @@
     line-height: 100%;
     text-transform: uppercase;
 }
-
 .sale-off p.off {
     font-family: Montserrat;
     text-transform: uppercase;
@@ -73,7 +73,6 @@
     font-size: 15px;
     margin: 3px 0 26px
 }
-
 .sale-off p.learn-more a {
     font-weight: 300;
     color: #fff;
@@ -86,17 +85,21 @@
     max-width: 120px;
     margin: 0 auto
 }
-
-
 /*BOOK SINGLE ROOM*/
 
 body .hb_button#hb_room_load_booking_form {
     float: right;
     margin-right: auto;
 }
-
-
-
+.room-details .hb_button {
+    float: right;
+}
+.room-details .price {
+    float: right;
+}
+.room-details .unit {
+    color: #3d3d3d;
+}
 /*SINGLE ROOM*/
 
 .hb_single_room .thim-single-room-content {
@@ -118,15 +121,15 @@ body .hb_button#hb_room_load_booking_form {
 .hb_single_room .thim-list-in-room2 ul li i {
     padding-right: 20px
 }
-
 /* BUTTON STYLE */
-.hb-room-content .search-room-button  a {
-        font-weight: 600;
-        color: @white;
-        display: block;
-        margin: auto;
-        line-height: 40px;
-        .rounded(3px);
-        max-width: 140px;
-        margin: 0 auto;
-      }
+
+.hb-room-content .search-room-button a {
+    font-weight: 600;
+    color: @white;
+    display: block;
+    margin: auto;
+    line-height: 40px;
+    .rounded(3px);
+    max-width: 140px;
+    margin: 0 auto;
+}
