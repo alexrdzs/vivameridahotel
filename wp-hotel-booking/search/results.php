@@ -11,8 +11,8 @@ global $hb_search_rooms;
 ?>
 <div id="hotel-booking-results">
 	<?php if ( $results && !empty( $hb_search_rooms['data'] ) ): ?>
-        <h3><?php _e( 'Our Availabilty', 'wp-hotel-booking' ); ?></h3>
-    
+        <h3><?php _e( 'Search Results', 'wp-hotel-booking' ); ?></h3>
+
     <p style="font-size:15px; margin-bottom:20px;">Here are some rooms perfect for you:</p>
     <hr>
 		<?php hb_get_template( 'search/list.php', array( 'results' => $hb_search_rooms['data'], 'atts' => $atts ) ); ?>
@@ -36,6 +36,6 @@ global $hb_search_rooms;
         <em><p style="font-size:18px;"><?php _e( 'We are unable to find a room matching your search. ', 'wp-hotel-booking' ); ?></p></em>
     <hr>
     <strong><a href="contact-us" style="font-size:18px;"> Please <span style="text-decoration:underline;">contact us directly</span> so we can help you find an available date.</a></strong>
-       
+
 	<?php endif; ?>
 </div>

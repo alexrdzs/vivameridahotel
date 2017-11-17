@@ -42,6 +42,6 @@ $prices = isset( $prices->prices ) ? $prices->prices : array();
             <span class="price_value price_min"><?php echo hb_format_price( $min ) ?></span>
 
 		<?php endif; ?>
-        <span class="unit"><?php _e( 'Night for 2 People', 'wp-hotel-booking' ); ?></span>
+        <span class="unit"><?php _e( 'Single per night', 'wp-hotel-booking' ); ?></span>
     </div>
 <?php endif; ?>

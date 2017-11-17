@@ -12,13 +12,13 @@ $content = ob_get_clean();
 
 
 $tabsInfo = array();
-if ( !isset($thim_options_data['thim_hb_single_hide_desc']) || 
+if ( !isset($thim_options_data['thim_hb_single_hide_desc']) ||
     !$thim_options_data['thim_hb_single_hide_desc']) {
     $tabsInfo[] = array(
         'id' => 'hb_room_description',
         'title' => esc_html__('Description', 'sailing'),
         'content' => $content
-        
+
     );
 }
 
@@ -39,17 +39,10 @@ $tabs = apply_filters('hotel_booking_single_room_infomation_tabs', $tabsInfo);
 do_action('hotel_booking_before_single_room_infomation');
 ?>
 
-<div>
-<?php
-        /**
-		 * hotel_booking_loop_room_single_price
-		 */
-		do_action( 'hotel_booking_loop_room_price' );
-?>
-</div>
+
 
 <?php if (isset($tabs) && count($tabs)) { ?>
-    <div class="hb_single_room_details">
+    <div class="hb_single_room_details" style="margin-bottom:55px;">
 
         <ul class="hb_single_room_tabs">
 
@@ -83,9 +76,21 @@ do_action('hotel_booking_before_single_room_infomation');
                     <?php do_action('hotel_booking_single_room_after_tabs_content_' . $tab['id']); ?>
                 </div>
 
+
+
             <?php endforeach; ?>
         </div>
 
+
+    </div>
+    <div class="row" style="margin:auto;">
+
+    <?php
+            /**
+         * hotel_booking_loop_room_single_price
+         */
+        do_action( 'hotel_booking_loop_room_price' );
+    ?>
     </div>
 
 <?php } ?>
