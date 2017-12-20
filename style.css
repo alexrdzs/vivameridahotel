@@ -5,7 +5,7 @@
  Author:       ThimPress (Modified by Alex Rds)
  Author URI:   http://thimpress.com
  Template:     sailing
- Version:      1.0.0
+ Version:      1.1.0
  Text Domain:  sailing-child
 */
 
@@ -132,4 +132,69 @@ body .hb_button#hb_room_load_booking_form {
     .rounded(3px);
     max-width: 140px;
     margin: 0 auto;
+}
+
+/******Ajuste en Contact Form ****************/
+
+.wpcf7-form .albert-custom input[type="checkbox"]{
+	    width: auto;
+    min-height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.wpcf7-form .albert-custom span.wpcf7-list-item{
+	    width: 35%;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/*****/
+.top_site_main .page-title-wrapper .banner-wrapper .heading__secondary {
+    font-family: Montserrat;
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.top_site_main {
+  position: relative;
+  text-align: center;
+  background: #222;
+  text-transform: none;
+  min-height: 180px;
+}
+  .page-title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      } 
+}
+
+h3.widget-title {
+    font-family: "Montserrat",Arial,sans-serif;
+    font-weight: 600;
+}
+
+.hb_single_room .price span.unit:before {
+    content: '';}
+
+.top-header aside {
+    border-bottom: 0px solid !important;
+	}
+
+.hb_button {
+	text-transform:Capitalize;
+	font-weight: 400;
+	font-size:12px;
+	letter-spacing: .05em;
+}
+
+.footer aside ul li {
+    text-transform: none !important;
 }

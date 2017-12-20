@@ -40,8 +40,10 @@ $prices = isset( $prices->prices ) ? $prices->prices : array();
 		<?php else: ?>
 
             <span class="price_value price_min"><?php echo hb_format_price( $min ) ?></span>
+        
+        <span class="title-price"><?php _e( 'MXN Pesos', 'wp-hotel-booking' ); ?></span>
 
 		<?php endif; ?>
-        <span class="unit"><?php _e( 'Single per night', 'wp-hotel-booking' ); ?></span>
+        <span class="unit"><?php _e( 'Starting price · Single', 'wp-hotel-booking' ); ?></span>
     </div>
 <?php endif; ?>
