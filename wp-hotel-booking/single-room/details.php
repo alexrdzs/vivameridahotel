@@ -47,7 +47,7 @@ do_action('hotel_booking_before_single_room_infomation');
          */
         do_action( 'hotel_booking_loop_room_price' );
     ?>
-        <a class="hb_button" href="http://www.booking.com/Share-KBkgEn#availability_target" target="_blank" title="This will redirect you to our booking site."><span style="color:#ffffff;">Book Now</span> </a> 
+        
     </div>
 
 
